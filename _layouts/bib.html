@@ -74,7 +74,7 @@
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
-                {% if author_is_self %}<em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
+                {% if author_is_self %}<strong>{{author.first}} {{last_name}}</strong>{%- if eq_contrib -%}*{%- endif -%},&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
                     <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>{% if eq_contrib %}*{% endif %},&nbsp;
@@ -85,7 +85,7 @@
               {%- else -%}
                 {%- if author_array_limit == author_array_size %}and {% endif %}
                 {% if author_is_self -%}
-                  <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
+                  <strong>{{author.first}} {{last_name}}</strong>{%- if eq_contrib -%}*{%- endif -%}
                 {% else -%}
                   {%- if coauthor_url -%}
                     <a href="{{coauthor_url}}">{{author.first}} {{author.last}}{% if eq_contrib %}*{% endif %}</a>
