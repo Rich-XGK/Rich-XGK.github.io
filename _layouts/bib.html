@@ -68,7 +68,7 @@
             
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <em>{{author.first}} {{last_name}}</em>{%- if eq_contrib -%}*{%- endif -%}
+                <strong>{{author.first}} {{last_name}}</strong>{%- if eq_contrib -%}*{%- endif -%}
               {%- else -%}
                 {{author.first}} {{author.last}}
               {%- endif -%}
