@@ -90,8 +90,8 @@ contact_note: >
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics: UA-69768980-1 # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
-panelbear_analytics: 2L2SaElaomp # panelbear analytics site ID (format: XXXXXXXXX)
+google_analytics: # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
+panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
@@ -102,7 +102,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Generative Space # blog_name will be displayed in your blog page
 # blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # set blank to hide blog from navbar
 blog_description: 
 permalink: /blog/:year/:title/
 
@@ -111,7 +111,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: richxu # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -156,8 +156,8 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
-exclude:
+include: ['_pages'] # additional directories to include when processing the site
+exclude:  # directories to exclude when processing the site
   - bin
   - Gemfile
   - Gemfile.lock
