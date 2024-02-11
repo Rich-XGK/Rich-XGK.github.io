@@ -26,28 +26,28 @@
 
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
-        {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-          {%- else -%}
-          <abbr class="badge">{{entry.abbr}}</abbr>
+          {%- if entry.abbr -%}
+            {%- if site.data.venues[entry.abbr] -%}
+              <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            {%- else -%}
+              <abbr class="badge">{{entry.abbr}}</abbr>
+            {%- endif -%}
+            {%- if entry.award -%}
+              <span class="award badge">{{entry.award}}</span>
+            {%- endif -%}
+            {%- if entry.award2 -%}
+              <span class="award badge">{{entry.award2}}</span>
+            {%- endif -%}
           {%- endif -%}
-          {%- if entry.award -%}
-          <span class="award badge">{{entry.award}}</span>
+          {%- if entry.preview -%}
+            {% if entry.preview contains '://' -%}
+              <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+            {%- else -%}
+              <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+            {%- endif -%}
           {%- endif -%}
-          {%- if entry.award2 -%}
-          <span class="award badge">{{entry.award2}}</span>
-          {%- endif -%}
-        {%- endif -%}
-        {%- if entry.preview -%}
-          {% if entry.preview contains '://' -%}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-          {%- else -%}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
-          {%- endif -%}
-        {%- endif -%}
         </div>
-      </div> 
+      </div>
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-9">
