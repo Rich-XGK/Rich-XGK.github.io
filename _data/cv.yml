@@ -81,7 +81,7 @@
     - <strong>Tools:</strong> Git, Docker, Linux, Vim, Jupyter, VSCode
     - <strong>Language:</strong> English (fluent), Chinese (native)
 
-- title: Publications
+# - title: Publications
   type: time_table
   contents:
     - title: <a href="https://openreview.net/pdf?id=F7QnIKlC1N"> "GTMGC: Using Graph Transformer to Predict Molecule’s Ground-State Conformation" </a>
