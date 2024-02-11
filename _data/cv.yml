@@ -72,3 +72,12 @@
 #     - <strong>Area Chair:</strong> CVPR (2023), NeurIPS (2023).
 #     - <strong>Journal Reviewer:</strong> JRSS-B, JMLR, TMLR, IEEE TPAMI, ACM TKDD, Medical Image Analysis, IEEE TIFS, IEEE TNNLS, IEEE TDSC, IET CV.
 #     - <strong>Conference Reviewer/ Program Committee:</strong> NeurIPS (2019-2022, 2016), ICML (2019-2023), ICLR (2019-2023), AISTATS (2020-2022), UAI (2020-2023), AAAI (2020).
+
+- title: Skills
+  type: list
+  contents:
+    - <strong>Programming Languages:</strong> Python, C++, Java
+    - <strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow, PadddlePaddle, PyTorch Geometric (PyG), DGL
+    - <strong>Tools:</strong> Git, Docker, Linux, Vim, Jupyter, VSCode
+    - <strong>Language:</strong> English (fluent), Chinese (native)
+
