@@ -85,7 +85,7 @@
   type: time_table
   contents:
     - title: <a href="https://openreview.net/pdf?id=F7QnIKlC1N">GTMGC: Using Graph Transformer to Predict Molecule’s Ground-State Conformation</a>
-      authors: <strong>Guikun Xu</strong>, Quanyong Jiang, Pengchuan Lei, Yan Yang, and Jim.X Chen
+      institution: <strong>Guikun Xu</strong>, Quanyong Jiang, Pengchuan Lei, Yan Yang, and Jim.X Chen
       year: 2024
       description: 
         - <red>ICLR2024 (Spotlight)</red> at 12th International Conference on Learning Representations, Vienna, Austria.
